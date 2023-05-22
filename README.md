@@ -27,10 +27,15 @@ mininet> h1 python client.py
 >
 ```
 
-3. The test program will enter into a new prompt, into which you can type basic expressions. It will then parse your expression, and prepare a packet accordingly. This packet will then be sent to the switch for processing. When the switch returns the result of the operation, the test program will print the result.
+3. The test program will enter into a new prompt, into which you can type the input you want to send. There are two types of possible interactions: writing and reading. After that, the address of the registry must be passed, then the data to write to the registry. (You must pass a data file even in a read operation.) It will then parse your input and prepare a packet accordingly. This packet will then be sent to the switch for processing. When the switch returns the result of the reading, the test program will print the result.
 
 ```
-> 
+> 1 12 123456
+1 12 123456
+> 0 12 0
+0
+12
+123456
 >
 ```
 
